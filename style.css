@@ -87,3 +87,20 @@ ul li.checked{
 ul li.checked::before{ /* before라는 가상 요소에 대해서 이미지를 따로 바꿈 */
   background-image: url(checked.png); /* 체크된 이미지 */
 }
+
+ul li span{
+  position: absolute;
+  right: 0; /* 오른쪽에 붙게 */
+  top: 5px; /* 위에서부터 5px 떨어지게 */
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px; /* height와 line-height를 동일하게 함으로써 세로선 상 중앙 위치에 배치 */
+  text-align: center;  /* 글자 중앙 정렬 */
+  border-radius: 50%; /* span을 둥글게 */
+}
+
+ul li span:hover{ /* span 칸에 마우스를 올렸을 때 적용할 스타일 */
+  background: #edeef0;
+}
